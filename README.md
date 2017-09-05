@@ -13,7 +13,7 @@ The Commvault Kafka Messenger and Confluent Plaform require a 1.7 or later versi
 ```sh
 java -version
 ```
-The Commvault Kafka Messenger requires and already configured data source on the Commvault Web Analytics Engine and supporting software from Commvault.
+The Commvault Kafka Messenger requires and already configured data source through the Commvault Web Analytics Engine and supporting software from Commvault.
 
 ### Installation
 The Confluent Platform only provides services for Linux distributions such as Ubuntu and Bash on Ubuntu on Windows. 
@@ -55,7 +55,7 @@ schema-registry is [UP]
 If all services are "UP", the Commvault Kafka Messenger may be run.
 
 ## Using Commvault Kafka Messenger
-### Confluent Producer:
+### Messenger Producer:
 #### partitionCalculator(String fileName)
 Returns the number of parititons based on the size of JSON file.
 
@@ -78,6 +78,9 @@ Returns information aobut a topic, including number of partitions and leader
 ```sh
  {"name":"topic1","configs":{},"partitions":[{"partition":0,"leader":0,"replicas":[{"broker":0,"leader":true,"in_sync":true}]}]}
 ```
+
+### Messenger Consumer Group
+Create consumer group (multiple threads of Confluent consumer clients)
 
 #### parititionInfo(String topic)
 Returns information about a topic's partitions
