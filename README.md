@@ -13,7 +13,7 @@ The Commvault Kafka Messenger and Confluent Plaform require a 1.7 or later versi
 ```sh
 java -version
 ```
-The Commvault Kafka Messenger requires and already configured DataCube and supporting software from Commvault.
+The Commvault Kafka Messenger requires and already configured data source on the Commvault Web Analytics Engine and supporting software from Commvault.
 
 ### Installation
 The Confluent Platform only provides services for Linux distributions such as Ubuntu and Bash on Ubuntu on Windows. 
